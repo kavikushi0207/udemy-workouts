@@ -29,7 +29,7 @@
 			margin-left: -100%;
 			background-color: yellow;
 		}
-		#leftColumn{
+		#rightColumn{
 			float: left;
 			width: 230px;
 			margin-left: -230px;
@@ -63,9 +63,87 @@
 		li:last-child{
 			border-right: none;
 		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover:not(.active){
+			background: #808080;
+		}
+		.active{
+			background-color: #0099ff;
+		}
+		/*responsive layout css*/
+		@media (max-width: 840px) {
+			/*drop right column down*/
+			#rightColumn{
+			float: none;
+			width: 100%;
+			margin-left: 0;
+			clear: both;
+			}
+			#leftColumn{
+				margin-left: -100%;
+			}
+			#contentcolumn{
+				margin-right: 0 ;/*set margin to left column width*/
+			}
+		}
+		@media (max-width: 600px) {
+			/*drop  left column*/
+			#leftColumn{
+				float: none;
+				width: 100%;
+				margin-left: 0;
+				clear: both;
+			}
+			#contentcolumn{
+				margin-right: 0 ;/*set margin to left column width*/
+			}
+		}
 	</style>
 </head>
 <body>
-
+<div id="container">
+	<div id="header">
+		<ul style="display: inline;">
+			<li><a href="#home" class="active">home</a></li>
+			<li><a href="#news" >news</a></li>
+			<li><a href="#contact" >contact</a></li>
+			<li><a href="#about" >about</a></li>
+		</ul>
+		
+	</div>
+	<div id="contentwraper">
+		<div id="contentcolumn">
+			<div class="innertext">
+				<b>Welcome<br>
+				binary number can have only two values, 1 or 0. When we do binary arithmetic we have to follow a conventional set of rules that govern the manipulation of the binary numbers. The normal way to understand the set of rules is through a Truth Table, which will contain all possible values that the binary numbers can take.
+				Addition aaasfsd;lk; kk;pd;sl;;fk lflkdje
+				The rule that applies when adding two binary numbers is that if the sum exceeds 1, then you must carry 1 to the next most significant column as a carry in, for example 1 + 1 = 10 (the 1 in 10 is the carry in bit). With this rule the Truth Table for adding two binary numbers A and B, both of which can take values 1 and 0 is shown below.
+			</div>
+		</div>
+	</div>
+	<div id="leftColumn">
+		<div class="innertext">
+			<b>left column<br>
+			binary number can have only two values, 1 or 0. When we do binary arithmetic we have to follow a conventional set of rules that govern the manipulation of the binary numbers. The normal way to understand the set of rules is through a Truth Table, which will contain all possible values that the binary numbers can take.
+			Addition aaasfsd;lk; kk;pd;sl;;fk lflkdje
+			The rule that applies when adding two binary numbers is that if the sum exceeds 1, then you must carry 1 to the next most significant column as a carry in, for example 1 + 1 = 10 (the 1 in 10 is the carry in bit). With this rule the Truth Table for adding two binary numbers A and B, both of which can take values 1 and 0 is shown below.
+		</div>
+	</div>
+	<div id="rightColumn">
+		<div class="innertext">
+			<b>right column<br>
+			binary number can have only two values, 1 or 0. When we do binary arithmetic we have to follow a conventional set of rules that govern the manipulation of the binary numbers. The normal way to understand the set of rules is through a Truth Table, which will contain all possible values that the binary numbers can take.
+			Addition aaasfsd;lk; kk;pd;sl;;fk lflkdje
+			The rule that applies when adding two binary numbers is that if the sum exceeds 1, then you must carry 1 to the next most significant column as a carry in, for example 1 + 1 = 10 (the 1 in 10 is the carry in bit). With this rule the Truth Table for adding two binary numbers A and B, both of which can take values 1 and 0 is shown below.
+		</div>
+	</div>
+	<div id="footer">footer</div>
+</div>
 </body>
 </html>
