@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--
+	<p ID="add"></p>
+	<p ID="sub"></p>
+	<p ID="div"></p>
+	<p ID="mul"></p>
+	-->
+	<p id="demo"></p>
+	<p id="demo1"></p>
+<script type="text/javascript">
+	
+/*method one
+document.write(5+6);*/
+
+/*method two
+window.alert(5+7);*/
+
+/*method three
+document.getElementById("math").innerHTML=6+3;/*
+/*variables
+
+var x =10;
+var y =20;
+var z =x+y;
+document.getElementById("math").innerHTML=z;*/
+/*arithmetic operators
+var x = 100+20;
+var y = 100-20;
+var z = 100/20;
+var w = 100*20;
+document.getElementById("add").innerHTML=x;
+document.getElementById("sub").innerHTML=y;
+document.getElementById("div").innerHTML=z;
+document.getElementById("mul").innerHTML=w;*/
+
+/*objects
+var cars ={type:"volvo",model:"cvx23",color:"navy"};
+
+document.getElementById("demo").innerHTML=cars.model;
+var person ={name:"kavini",age:23,eyecolor:"brown"};
+document.getElementById("demo").innerHTML=person.name+" has "+person.eyecolor+" eyes at age of "+person.age;*/
+
+/*length function
+var text="slslsljlwepjcscnkdojfwjceofokwj";
+document.getElementById("demo").innerHTML=text.length;*/
+
+/*random numbers
+document.getElementById("demo").innerHTML=Math.random();*/
+
+/*max min function
+document.getElementById("demo").innerHTML=Math.max(456,56,7,897,-23,4);
+document.getElementById("demo1").innerHTML=Math.min(456,56,7,897,-23,4);*/
+
+/*rounding numbers
+document.getElementById("demo").innerHTML=Math.round(12.5);*/
+
+/*arrays
+var fruit=["apple","orange","mango"];
+var fruit1=["apple","orange","mango"];
+document.getElementById("demo1").innerHTML=fruit[0];
+document.getElementById("demo1").innerHTML=fruit.toString();
+var cmb=fruit.concat(fruit1);
+document.getElementById("demo1").innerHTML=cmb;*/
+
+/*boolean true/false
+var b1 = Boolean("");
+document.getElementById("demo1").innerHTML=b1;*/
+
+/*for in loop
+var t="";
+var p={name:"kavini",age:23,eyecolor:"brown"};
+var x;
+for(x in p){
+	t += p[x] + " ";
+}
+document.getElementById("demo1").innerHTML=t;*/
+var bgcolor=new Array("#029FD4", "#D43702", "#1EFF00", "#EAEAFF", "#FFEA00", "#AB5252", "#FFFFFF", "#DE28D8")
+
+document.body.style.background=bgcolor[Math.floor(Math.random()*bgcolor.length)]
+
+
+</script>
+
+</body>
+</html>
